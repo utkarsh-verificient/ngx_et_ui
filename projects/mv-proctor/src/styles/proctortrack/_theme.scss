@@ -1,0 +1,145 @@
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+// primary color palette
+$mat-primary: (
+  50: #e4e6e8,
+  100: #bcc1c6,
+  200: #8f98a0,
+  300: #626f79,
+  400: #41505d,
+  500: #1f3140,
+  600: #1b2c3a,
+  700: #172532,
+  800: #121f2a,
+  900: #0a131c,
+  A100: #0fe9ff,
+  A200: #00bed1,
+  A400: #00a7b8,
+  A700: #0099a8,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+// accent color palette
+$mat-accent: (
+  50: #e4eefb,
+  100: #bcd5f5,
+  200: #8fbaef,
+  300: #629ee8,
+  400: #4189e3,
+  500: #1f74de,
+  600: #1b6cda,
+  700: #1761d5,
+  800: #1257d1,
+  900: #0a44c8,
+  A100: #a7cdff,
+  A200: #6aaaff,
+  A400: #509cff,
+  A700: #4193ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+// warn color palette
+$mat-warn: (
+  50: #feedee,
+  100: #fdd3d4,
+  200: #fcb6b8,
+  300: #fa999b,
+  400: #f98385,
+  500: #f86d70,
+  600: #f76568,
+  700: #f65a5d,
+  800: #f55053,
+  900: #f33e41,
+  A100: #ffffff,
+  A200: #ffd7dd,
+  A400: #ffbec6,
+  A700: #ffaeb9,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$proctortrack-primary: mat.define-palette($mat-accent);
+
+$proctortrack-accent: mat.define-palette($mat-primary);
+
+$proctortrack-warn: mat.define-palette($mat-warn, 600);
+
+$proctortrack-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $proctortrack-primary,
+      accent: $proctortrack-accent,
+      warn: $proctortrack-warn,
+    ),
+  )
+);
+
+// Custom theme for proctortrack
+.theme-proctortrack {
+  @include mat.all-component-themes($proctortrack-theme);
+}
+
+body {
+  --primary-color: #1f3140;
+  --accent-color: #1f74de;
+}
+
+// Override default style of material components
+.material-icons,
+.material-icons-solid {
+  &.mat-icon {
+    // height: 20px;
+    // width: 20px;
+    // font-size: 20px;
+    // line-height: 1 !important;
+  }
+  // font-size: 20px;
+  .mat-badge-content {
+    font-family: 'Roboto';
+  }
+}

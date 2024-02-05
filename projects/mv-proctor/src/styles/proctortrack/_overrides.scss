@@ -1,0 +1,23 @@
+.theme-proctortrack {
+  .image-viewer-dialog {
+    .mdc-dialog__surface {
+      background-color: unset;
+      box-shadow: unset;
+      overflow: hidden;
+    }
+  }
+
+  .video-viewer-dialog {
+    .mdc-dialog__surface {
+      background-color: unset;
+      box-shadow: unset;
+      overflow: hidden;
+    }
+  }
+
+  .qrcode {
+    img {
+      border-radius: 5px;
+    }
+  }
+}

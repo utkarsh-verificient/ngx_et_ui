@@ -44,6 +44,10 @@
               "projects/mv-proctor/src/assets"
             ],
             "styles": [
+              "projects/mv-proctor/src/styles/core/animation.scss",
+              "projects/mv-proctor/src/styles/core/material.scss",
+              "projects/mv-proctor/src/styles/core/material-theme.scss",
+              "projects/mv-proctor/src/styles/core/tailwind.scss",
               "projects/mv-proctor/src/styles.scss"
             ],
             "scripts": []
