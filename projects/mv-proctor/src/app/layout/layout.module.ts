@@ -1,12 +1,23 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-
+import { LayoutComponent } from './layout.component';
+import {
+  EmptyLayoutModule,
+  FrameLayoutModule,
+  PtLayoutModule,
+  TaLayoutModule,
+} from './layouts';
 
 @NgModule({
-  declarations: [],
+  declarations: [LayoutComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    EmptyLayoutModule,
+    FrameLayoutModule,
+    PtLayoutModule,
+    TaLayoutModule,
+  ],
+  exports: [LayoutComponent],
 })
-export class LayoutModule { }
+export class LayoutModule {}

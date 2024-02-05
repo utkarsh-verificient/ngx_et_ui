@@ -1,0 +1,15 @@
+<div class="layout">
+  <ng-container *ngIf="layout$ | async; let layout">
+    <!-- Empty Layout -->
+    <vt-empty-layout *ngIf="layout === 'empty-layout'" />
+
+    <!-- Blue-Frame Layout -->
+    <vt-frame-layout *ngIf="layout === 'frame-layout'" />
+
+    <!-- Proctortrack App Layout -->
+    <vt-pt-layout *ngIf="layout === 'pt-layout'" />
+
+    <!-- ProctorTA App Layout -->
+    <vt-ta-layout *ngIf="layout === 'ta-layout'" />
+  </ng-container>
+</div>
