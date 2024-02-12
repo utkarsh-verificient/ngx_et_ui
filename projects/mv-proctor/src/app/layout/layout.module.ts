@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { LayoutComponent } from './layout.component';
 import {
+  BrowserLayoutModule,
   EmptyLayoutModule,
   FrameLayoutModule,
   PtLayoutModule,
@@ -17,6 +18,7 @@ import {
     FrameLayoutModule,
     PtLayoutModule,
     TaLayoutModule,
+    BrowserLayoutModule,
   ],
   exports: [LayoutComponent],
 })
