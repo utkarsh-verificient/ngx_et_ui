@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         blueWhale: "#1F3140",
         soothingSapphire: "#1F73DB",
+        droplet: "#B2D5FF",
+        blackStallion: "#101921",
         breezeOfChilli: "#F86D70",
       },
       letterSpacing: {
