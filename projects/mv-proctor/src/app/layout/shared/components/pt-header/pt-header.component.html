@@ -1,0 +1,46 @@
+<header
+  class="bg-blueWhale h-[40px] flex flex-row items-center justify-between px-[30px]"
+>
+  <section class="flex flex-row items-center justify-between gap-5">
+    <img src="assets/logos/logo_mv_proctor.svg" alt="MVProctor Logo" />
+    <img src="assets/logos/logo_dmv.svg" alt="DMV Logo" />
+    <img src="assets/logos/logo_ca_gov_teal.svg" alt="CA Gov Logo" />
+  </section>
+  <section
+    class="flex flex-row items-center justify-between text-droplet gap-6"
+  >
+    <button
+      class="flex flex-row items-center"
+      type="button"
+      title="Chat with support desk"
+      tabindex="0"
+      role="button"
+      aria-label="Chat with support desk"
+      [matTooltip]="'Chat with support desk'"
+    >
+      <mat-icon class="material-icons-outlines">chat</mat-icon>
+    </button>
+    <button
+      class="flex flex-row items-center"
+      type="button"
+      title="Minimize app"
+      tabindex="0"
+      role="button"
+      aria-label="Minimize app"
+      [matTooltip]="'Minimize app'"
+    >
+      <mat-icon>remove</mat-icon>
+    </button>
+    <button
+      class="flex flex-row items-center"
+      type="button"
+      title="Quit app"
+      tabindex="0"
+      role="button"
+      aria-label="Quit app"
+      [matTooltip]="'Quit app'"
+    >
+      <mat-icon>power_settings_new</mat-icon>
+    </button>
+  </section>
+</header>
