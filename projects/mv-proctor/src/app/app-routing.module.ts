@@ -12,10 +12,6 @@ const routes: Routes = [
             {
                 path: 'pt',
                 loadChildren: () => import('./modules').then((m) => m.PtAppModule),
-                data: {
-                  theme: ['theme-proctortrack'],
-                  layout: 'pt-layout',
-              },
             },
             {
                 path: 'br',
