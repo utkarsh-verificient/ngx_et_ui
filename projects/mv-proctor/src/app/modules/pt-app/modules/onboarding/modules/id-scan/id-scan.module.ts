@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { IdScanRoutingModule } from './id-scan-routing.module';
+import { IdScanComponent } from './id-scan.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [IdScanComponent],
   imports: [
     CommonModule,
     IdScanRoutingModule
